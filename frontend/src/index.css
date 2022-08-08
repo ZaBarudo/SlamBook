@@ -1,0 +1,93 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.auth-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  background-color: aqua;
+  max-width: 600px;
+  padding: 20px 30px;
+  border-radius: 5%;
+
+}
+
+.auth-choices {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-choice {
+  padding: 10px 40px;
+  border-radius: 5%;
+  border: solid 0px;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+#login:checked ~ label.login {
+  background-color: aquamarine;
+  box-shadow: 5px 5px;
+}
+#register:checked ~ label.register {
+  background-color: aquamarine;
+  box-shadow: 5px 5px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth-form > input {
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: solid 0px;
+  transition: all 0.4s ease;
+  outline: none;
+}
+
+.auth-form > input:focus {
+  transform: scale(1.05);
+}
+
+.auth-form > button[type="submit"] {
+  background-color: aquamarine;
+  font-weight: bolder;
+  font-size: larger;
+  box-shadow: 5px 5px;
+  padding: 10px 40px;
+  border-radius: 5%;
+  border: solid 0px;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+
